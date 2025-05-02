@@ -50,6 +50,7 @@ Gamy é um assistente virtual **nerd e divertido** especializado em tudo sobre *
 npm install
 # ou yarn
 
+
 3. Defina variáveis de ambiente (Upstash Redis):
 env
 UPSTASH_REDIS_REST_URL=your_upstash_url
@@ -61,9 +62,9 @@ npm run dev
 
 5. Acesse http://localhost:3000 e comece a bater um papo com o Gamy!
 
+6. Ou se referir ver o deploy: https://gamy-beta.vercel.app
+
 ## 📂 Estrutura do Projeto
-├── public/
-│   └── assets/logo.png       # Logo do Gamy
 ├── src/
 │   ├── app/                  # Rotas e páginas Next.js
 │   ├── components/           # Componentes React (ChatContainer, ChatForm, ChatBubble...)

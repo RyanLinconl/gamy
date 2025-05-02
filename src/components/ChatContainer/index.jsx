@@ -53,7 +53,7 @@ export const ChatContainer = () => {
           <div className={styles.loaderWrapper}>
             <Loader />
             <Button variant="danger" onClick={stop}>
-              <IconStop /> Parar
+              <IconStop />
             </Button>
           </div>
         )}

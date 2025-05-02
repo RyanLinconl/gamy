@@ -50,6 +50,8 @@ Gamy é um assistente virtual **nerd e divertido** especializado em tudo sobre *
 npm install
 # ou yarn
 
+Acesse: https://gamy-beta.vercel.app
+
 3. Defina variáveis de ambiente (Upstash Redis):
 env
 UPSTASH_REDIS_REST_URL=your_upstash_url

@@ -1,0 +1,28 @@
+:root {
+  --bg-color: #444654;
+  --n-color-text: #d1d5db;
+  --bg: #444654;            
+  --input-bg: #202123;      
+  --text: #d1d5db;          
+  --placeholder: #565a63;   
+  --btn-bg: #114B5F;        
+  --btn-hover: #17a472;     
+  --shadow: rgba(0, 0, 0, 0.5);
+         
+  --chat-bg: #202123;       
+  --scrollbar-thumb: #4b4f58;
+  --user-msg-bg: #444654;    
+  --bot-msg-bg: #2a2c33;     
+  --text-user: #e5e5e5;      
+  --text-bot: #e5e5e5;      
+  --border-radius: 12px;
+  --btn-bg-sec: #565a63;     /* botão secundário */
+  --btn-bg-pri: #780000;     /* botão primário */
+  --btn-text-pri: #e5e5e5;   /* texto do botão primário */
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--n-color-text);
+}
+

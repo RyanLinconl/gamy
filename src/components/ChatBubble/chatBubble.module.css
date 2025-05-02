@@ -1,0 +1,91 @@
+.bubbleWrapper {
+    display: flex;
+    margin-bottom: 12px;
+    width: 100%;
+  }
+  
+  .bubble {
+    max-width: 75%;
+    padding: 16px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 4px var(--shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: var(--bot-msg-bg);
+    color: var(--text-bot);
+    word-wrap: break-word;
+  }
+  
+  .user {
+    justify-content: flex-end;
+  }
+  
+  .user .bubble {
+    background-color: var(--user-msg-bg);
+    color: var(--text-user);
+    align-self: flex-end;
+    border-bottom-right-radius: 4px;
+  }
+  
+  .bot {
+    justify-content: flex-start;
+  }
+  
+  .bot .bubble {
+    background-color: var(--bot-msg-bg);
+    color: var(--text-bot);
+    align-self: flex-start;
+    border-bottom-left-radius: 4px;
+  }
+  
+  /* Botão remover dentro da bolha */
+  .bubble button {
+    align-self: flex-end;
+    background-color: transparent;
+    border: none;
+    font-size: 0.875rem;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .user .bubble button {
+    background-color: var(--btn-bg-sec);
+  }
+  
+  .user .bubble button:hover {
+    background-color: rgba(86, 90, 99, 0.8);
+  }
+  
+  .bot .bubble button {
+    background-color: var(--btn-bg-pri);
+    color: var(--btn-text-pri);
+  }
+  
+  .bot .bubble button:hover {
+    background-color: rgba(88, 17, 17, 0.8);
+  }
+  
+  /* Markdown resets */
+  .bubble p {
+    margin: 0;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .bubble {
+      max-width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .bubble {
+      max-width: 100%;
+    }
+  }

@@ -1,0 +1,95 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 140px);
+    margin: 1rem;
+    background-color: var(--bg);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 12px var(--shadow);
+    overflow: hidden;
+  }
+  
+  .chat {
+    flex: 1;
+    background-color: var(--chat-bg);
+    padding: 16px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .chat::-webkit-scrollbar {
+    width: 8px;
+  }
+  .chat::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .chat::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb);
+    border-radius: 4px;
+  }
+  
+  .loaderWrapper,
+  .errorWrapper {
+    width: 20%;
+    display: flex;
+    align-items: center;      
+    gap: 12px;                 
+    padding: 8px;
+    background-color: var(--bot-msg-bg);
+    border-radius: var(--border-radius);
+  }
+  
+  .chat > .retry {
+    align-self: center;
+    margin-top: 8px;
+  }
+  
+  .bubble {
+    max-width: 75%;
+    padding: 12px 16px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 1px 3px var(--shadow);
+    color: var(--text);
+    line-height: 1.5;
+  }
+  
+  .bubble.user {
+    background-color: var(--user-msg-bg);
+    align-self: flex-end;
+    border-bottom-right-radius: 4px;
+  }
+  
+  .bubble.bot {
+    background-color: var(--bot-msg-bg);
+    align-self: flex-start;
+    border-bottom-left-radius: 4px;
+  }
+  
+  .header {
+    padding: 14px;
+    background-color: var(--chat-bg);
+    border-bottom: 1px solid #3e3f47;
+    color: var(--text);
+    font-weight: 600;
+    box-shadow: 0 2px 4px var(--shadow);
+  }
+  
+  .loaderWrapper button,
+  .errorWrapper button {
+    margin-left: auto;
+    background-color: #780000;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  .loaderWrapper button:hover,
+  .errorWrapper button:hover {
+    background-color: #780000;
+  }
+  

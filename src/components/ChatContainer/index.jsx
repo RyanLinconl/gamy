@@ -25,15 +25,12 @@ export const ChatContainer = () => {
     reload
   } = useChat()
 
-  // ref para o div “sentinela” no fim
   const endRef = useRef(null)
 
-  // sempre que mensagens mudarem, rola suavemente para o endRef
   useEffect(() => {
     endRef.current?.scrollIntoView({ behavior: 'smooth' })
   }, [messages])
 
-  // função para remover mensagem
   function removeMessage(msgId) {
     setMessages(messages.filter(m => m.id !== msgId))
   }
@@ -72,7 +69,6 @@ export const ChatContainer = () => {
           <RetryButton className="retry" onClick={reload} />
         )}
 
-        {/* elemento invisível que marca o fim */}
         <div ref={endRef} />
       </div>
 

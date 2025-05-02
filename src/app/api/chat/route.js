@@ -13,8 +13,6 @@ export const runtime = 'edge'
 export async function POST(request) {
   const ip = request.ip ?? 'ip'
   const { success, remaining } = await ratelimit.limit(ip)
-  console.log(remaining)
-  console.log(success)
   if (!success) {
     return new Response('Limite de mensagens atingido.', { status: 429 })
   }

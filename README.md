@@ -1,52 +1,76 @@
-# gamy
-Um assistente de IA treinado e focado para falar sobre Jogos.
+![Gamy Logo](./assets/logo.png)
 
-![](thumbnail.png)
+# Gamy
 
-![](https://img.shields.io/github/license/alura-cursos/android-com-kotlin-personalizando-ui)
+Gamy é um assistente virtual **nerd e divertido** especializado em tudo sobre **games**. Seja para buscar notícias, dicas, recomendações ou curiosidades do universo gamer, o Gamy está sempre pronto para ajudar!
 
-# Curso: Vercel IA SDK
+---
 
-Neste curso, você aprenderá a integrar o Vercel AI SDK em uma aplicação Next.js para construir um assistente inteligente que interage com usuários de forma dinâmica. O projeto do curso, chamado Vidy, será um assistente especializado em recomendações de filmes, demonstrando como utilizar IA e SSR (Server-Side Rendering) juntos.
+## 🚀 Funcionalidades Principais
 
-## 🔨 Funcionalidades do projeto
+1. **News e Lançamentos**  
+   - Fique por dentro das últimas novidades, datas de pré-venda e análises rápidas.  
+2. **Dicas e Guias**  
+   - Tutoriais, builds de personagens, walkthroughs e estratégias para diversos gêneros.  
+3. **Recomendações Personalizadas**  
+   - Sugestões de jogos baseadas em preferências de gênero, estilo de jogo e tempo disponível.  
+4. **Curiosidades e História**  
+   - Fatos marcantes sobre desenvolvedoras, franquias e momentos icônicos do mundo gamer.  
+5. **Agenda de Eventos**  
+   - Informações sobre campeonatos, feiras, Game Jams e outros eventos.
 
-Durante o curso, você implementará:
+---
 
-- Um assistente de IA capaz de responder perguntas sobre filmes.
-- Implementação de respostas em tempo real utilizando streaming de respostas do modelo de IA.
-- Integração com modelos de linguagem avançados (como GPT) para processar e responder perguntas.
-- Rate limiting para controlar o fluxo de requisições ao assistente.
+## 🎨 Estilo e Tom
 
-## ✔️ Técnicas e tecnologias utilizadas
+- Tom **acolhedor**, **descontraído** e levemente **entusiasta**, como se conversasse com um amigo gamer.  
+- Uso moderado de emojis e referências pop-gamer (🎮, ⚔️, 🕹️) para tornar a conversa mais leve.  
+- Respostas objetivas em até três parágrafos, com links ou títulos de jogos quando aplicável.
 
-Você irá trabalhar com as seguintes tecnologias e conceitos:
+---
 
-- **Next.js**: Framework React com funcionalidades de SSR e API Routes.
-- **Vercel AI SDK**: SDK para construir e integrar assistentes de IA em aplicações web.
-- **Redis e upstash**: Para gerenciamento de rate limiting e controle de acessos.
-- **Logs e tratamento de erros**: Implementação de um sistema robusto de gerenciamento de logs e controle de erros.
+## 🛠️ Tecnologias Utilizadas
 
-## 🎯 O que você vai aprender
+- **Next.js** (App Router / React 18)  
+- **React** com Hooks (useState, useEffect, useRef)  
+- **CSS Modules** para escopo de estilos  
+- **API AI** (`ai/react`) para integração com modelo de linguagem  
+- **Vercel** para deploy e hospedagem
 
-Ao longo do curso, você aprenderá a:
+---
 
-- Criar um assistente de IA utilizando o modelo GPT.
-- Implementar rate limiting para proteger suas rotas e limitar o número de requisições.
-- Configurar o SDK da Vercel AI para construir fluxos de comunicação entre o assistente e os usuários.
-- Gerenciar logs e erros.
+## ⚙️ Instalação e Uso
 
-## 🛠️ Como executar o projeto
+1. Clone este repositório:  
+   ```bash
+   git clone https://github.com/seu-usuario/gamy.git
+   cd gamy
 
-Siga os passos abaixo para rodar o projeto localmente:
+2. Instale as dependências:
+npm install
+# ou yarn
 
-1. Clone o repositório para sua máquina.
-2. Abra o projeto no seu editor de código preferido.
-3. No terminal, navegue até o diretório do projeto.
-4. Execute o comando `npm install` para instalar as dependências.
-5. Inicie o servidor de desenvolvimento com `npm run dev`.
-6. Acesse `http://localhost:3000` no seu navegador para visualizar o projeto.
+3. Defina variáveis de ambiente (Upstash Redis):
+env
+UPSTASH_REDIS_REST_URL=your_upstash_url
+UPSTASH_REDIS_REST_TOKEN=your_upstash_token
 
-## 📚 Mais Informações
+4. Rode em modo de desenvolvimento:
 
-Se você deseja mergulhar fundo no desenvolvimento de assistentes inteligentes com IA, SSR e integração de APIs, [acesse o curso]() e acompanhe todo o processo de desenvolvimento do Vidy!
+npm run dev
+
+5. Acesse http://localhost:3000 e comece a bater um papo com o Gamy!
+
+## 📂 Estrutura do Projeto
+├── public/
+│   └── assets/logo.png       # Logo do Gamy
+├── src/
+│   ├── app/                  # Rotas e páginas Next.js
+│   ├── components/           # Componentes React (ChatContainer, ChatForm, ChatBubble...)
+│   ├── styles/               # CSS Modules
+│   └── icons/                # Ícones personalizados
+├── .env.local                # Variáveis de ambiente
+├── package.json              # Dependências e scripts
+└── README.md                 # Documentação do projeto
+
+<div align="center"> <sub>Feito com ❤️ por um entusiasta de games.</sub> </div>
